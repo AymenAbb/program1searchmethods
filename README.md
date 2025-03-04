@@ -2,7 +2,7 @@
 Intro to AI- Program 1: Search Methods
 
 
-Prompts used for ChatGPT o1:
+Prompt used for ChatGPT o1 below:
 ------------------------------------------------------------------------------------------------------------------------------
 Canvas Write this in Python, all in one file.
 
@@ -23,9 +23,9 @@ You'll want to think about the initial conditions and how to check for a "valid"
 Programming details:
 • You’re given 2 data files:
 ◦ The first (adjacencies.txt) is a list of all the cities we know about in southern Kansas and the latitude and longitude of each.
-# Names have been simplified to use underscores instead of a space
+ Names have been simplified to use underscores instead of a space
 ◦ A file (coordinates.csv) listing each town (pair) as a related adjacent node. 
-# be aware adjacency is symmetric: If A is adjacent to B, then B is adjacent to A. This may not be listed comprehensively if your method requires that bidirectional connections be explicitly stated, you may need to generate additional pairs for the symmetrical connection to work.
+ be aware adjacency is symmetric: If A is adjacent to B, then B is adjacent to A. This may not be listed comprehensively if your method requires that bidirectional connections be explicitly stated, you may need to generate additional pairs for the symmetrical connection to work.
 --> Be sure to take this into account when setting up your program’s data structures. If adjacency is listed
 in either direction, it should be considered present in both directions.
 • Your program should:
