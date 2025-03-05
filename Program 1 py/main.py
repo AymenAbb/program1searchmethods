@@ -1,6 +1,6 @@
 import math
 import time
-from collections import deque
+from collections import deque # for FIFO & LIFO support
 
 # Majority of this is written by ChatGPT o1 unless otherwise stated.
 # I have done error checking, padding, and some switching around of words to sound better
@@ -16,12 +16,12 @@ def read_adjacencies(adj_file_path="adjacencies.txt"):
 
     with open(adj_file_path, 'r') as f:
         for line in f:
-            line = line.strip()
+            line = line.strip() # I love Python
             if not line:
                 continue
             parts = line.split()
             if len(parts) == 2:
-                city1, city2 = parts
+                city1, city2 = parts # Transfer to undirected graph
                 if city1 not in adjacencies:
                     adjacencies[city1] = []
                 if city2 not in adjacencies:
@@ -82,7 +82,6 @@ def reconstruct_path(parents, start, goal):
         if current in parents:
             current = parents[current]
         else:
-            # e.g. if current == start
             if current == start:
                 break
             current = None
